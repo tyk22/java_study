@@ -15,64 +15,73 @@ public class Homework04 {
 		System.out.println("=== 합격인가? 불합격인가? ===");
 		System.out.println("각 과목의 점수를 입력하세요.");
 		
+		String fail = "";
+		
 		System.out.print("소프트웨어설계 점수: ");
 		int soft1 = sc.nextInt();
-		String sof;
+		
 		
 		System.out.print("소프트웨어개발 점수: ");
 		int soft2 = sc.nextInt();
-		String sof2;
+		
 		System.out.print("데이터베이스구축 점수: ");
 		int dtdg = sc.nextInt();
-		String dtd;
+		
 		
 		System.out.print("프로그래밍언어활용 점수: ");
 		int porg = sc.nextInt();
-		String por;
 		
-		//=================
+		
 		System.out.print("정보시스템구축관리 점수: ");
 		int jo = sc.nextInt();
-		String j;
+		
 		
 		int same = 0;
+		
 		
 		if ( soft1 >= 40) {
 			same = soft1 + same;
 		}else {
-			sof= "소프트웨어설계";
+			fail += "소프트웨어 설계 ";
 		}
 		
 		if ( soft2>=40) {
 			same = soft2 + same;
 		}else {
-			sof2= "소프트웨어개발";
+			// sof2= "소프트웨어개발 ";
+			fail+= "소프트웨어 개발";
 		}
 		
 		if(dtdg>=40) {
 			same = dtdg + same;
 		}else {
-			dtd= "데이터베이스구축";
+			fail+="데이터베이스구축 ";
 		}
 		
 		if(porg>=40) {
 			same = porg + same;
 		}else {
-			por = "프로그래밍언어활용";
+			fail+="프로그래밍언어활용 ";
 		}
 		if(jo>=40) {
 			same = jo + same;
 		}else {
-			j = "정보시스템구축관리";
+			fail+="정보시스템구축관리 ";
 		}
 		
-		if( same/5 >=60 ) {
-			System.out.println("합격을 축하합니다!");
+		
+		
+		if(soft1>=40 && soft2>=40 && dtdg>=40&&porg>=40&&jo>=40) {
+			if( same/5 >=60 ) {
+				System.out.println("합격을 축하합니다!");
+			}else {
+				System.out.println("평균 점수 60점 미만으로 불합격입니다. ");
+			}
 		}else {
-			System.out.println("평균 점수 60점 미만으로 불합격입니다. ");
+			//과락 있음
+			System.out.print(fail+"과목 과락으로 불합격입니다");
 		}
 		
 		
 	}
-
 }
