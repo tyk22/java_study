@@ -59,9 +59,17 @@ public class CompareOperator {
 		
 		System.out.println(!(test1 && test2));
 		
+		// 9. 삼항 연산자 ( [조건식] ? [true값] : [flase값] )
+		int x = 5;
+		int y = 10;
 		
+		boolean result = x>y;
+		// int nas = x > y ? x : y;
+		System.out.println();
 		
-		
+		int z = 3;
+		// 3개의 정수 중에서 가장 큰 수 찾기
+		int bigx = x > y ? (x > z ? x : z) : (y > z ? y : z); 
 		
 	}
 
