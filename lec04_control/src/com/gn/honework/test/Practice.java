@@ -92,9 +92,9 @@ public class Practice {
 		case 404 :System.out.println("요청하신 서비스를 찾을 수 없습니다."); break;
 		case 500 :System.out.println("처리 방법을 알 수 없는 문제가 발생했습니다."); break;
 		case 503 :System.out.println("일시적인 서버 오류가 발생하였습니다."); break;
-		default:System.out.println("알 수 없는 오류가 발생하였습니다.");
-		break;
+		default:System.out.println("알 수 없는 오류가 발생하였습니다.");break;
 		}
+	}
 //		(생략)
 //		선택: 4
 //		=== 철수네 공장 ===
@@ -109,6 +109,11 @@ public class Practice {
 		System.out.println("5. 종료");
 		int hls = sc.nextInt();
 		String c = "";
+		
+		
+		
+		
+		
 		if(hls==5) {
 			c = "종료";
 		}else if(hls==4) {
@@ -121,8 +126,10 @@ public class Practice {
 			c = "스쿼트";
 		}else if(hls <= 0){
 			System.out.println("양수만 입력해주세요. ");
+			return;
 		}else {
 			System.out.println("목록에 있는 순자만 입력해주세요. ");
+			return;
 		}
 		System.out.println(c+" 운동 시간입니다. ");
 
