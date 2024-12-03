@@ -14,7 +14,7 @@ public class Run {
 //		6. 트리 만들기
 //		7. 박수박수박
 //		선택: 7
-		System.out.println("했냐");	
+		
 		System.out.println("실행할 기능을 입력하세요. ");
 		System.out.println("2 . 구구단 무한반복");
 		System.out.println("3. 탈출합시다.");
@@ -28,6 +28,8 @@ public class Run {
 		int number = sc.nextInt();
 		switch(number) {
 		case 2 : practice.practice02();break;
+		case 3 : practice.practice03();break;
+		case 6 : practice.practice06();break;
 		}
 
 	}
