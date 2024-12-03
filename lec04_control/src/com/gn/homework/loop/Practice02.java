@@ -4,10 +4,6 @@ import java.util.Scanner;
 
 public class Practice02 {
 	Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD
-		
-	public void practice02(){
-=======
 	
 	public void practice01() {
 		int sum=0;
@@ -29,7 +25,6 @@ public class Practice02 {
 		}
 	} // 01 종료
 		public void practice02(){
->>>>>>> branch 'master' of https://github.com/tyk22/java_study.git
 			
 			//System.out.print("숫자 : ");
 			int num =0;
@@ -50,8 +45,7 @@ public class Practice02 {
 					System.out.println("9 이하의 숫자만 입력해주세요. ");
 				}
 			}
-<<<<<<< HEAD
-		}
+		}// 02 종료
 	public void practice03() {
 		
 		for(int i = 0; ; i++) {
@@ -67,7 +61,7 @@ public class Practice02 {
 				}
 			System.out.println();
 			}
-	}
+	}// 03종료
 	public void practice06() {
 		
 		System.out.println("    *    "); // 빈칸 4칸, * 1개
@@ -82,18 +76,7 @@ public class Practice02 {
 			}
 			System.out.println("*");
 		}
-	}
-	public void practice07() {
-		
-		System.out.println("정수 : ");
-		int jong = sc.nextInt();
-		
-	}
-}
-=======
-		} // 02 종료
->>>>>>> branch 'master' of https://github.com/tyk22/java_study.git
-		
+	}// 06 종료
 		public void practice04() {
 			do {
 				System.out.println("게임을 실행합니다!");
