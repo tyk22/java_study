@@ -23,7 +23,7 @@ public class Practice02 {
 					for(int i=1;i<=9;i++) {
 						System.out.println(num+" * "+i+" = "+(num*i));
 					}
-					break;
+					
 				}else if(num>=10) {
 					System.out.println("9 이하의 숫자만 입력해주세요. ");
 				
