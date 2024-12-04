@@ -198,11 +198,11 @@ public class DimensionalArray {
 		
 		// 깊은 복사
 		int[] arr2 = new int[arr1.length];
-		
+		int[] arr3 = {arr1.length}; // < 이렇게도 가능
 		for(int i=0; i<arr2.length;i++) {
 			arr2[i]=arr1[i];
 		}
-		arr2 [3]=100;
+		arr2 [3]=100; // 
 
 		for(int num1 : arr1) {
 			System.out.print(num1+", ");
@@ -233,7 +233,8 @@ public class DimensionalArray {
 		System.out.println(rnd);
 		
 		// 1~45 사이의 정수 랜덤값
-		
+		int game = (int)(Math.random()*(45))+(1);
+		System.out.println(game);
 		
 		
 		

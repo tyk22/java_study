@@ -10,7 +10,9 @@ public class Practice02 {
 		while (1==1) {
 			System.out.print("정수 (1~50) : ");
 			int so = sc.nextInt();
-			if (so > 0) {
+			if (so >50){
+			System.out.println("1~50 사이의 정수를 입력하세요. ");
+			}else if (so > 0) {
 				for(int i =0; i <=so;i++) {
 						
 					if(i%2==0) {
@@ -20,7 +22,7 @@ public class Practice02 {
 				System.out.println(sum);
 				break;
 			}else {
-			System.out.println("1~50 사이의 정수를 입력하세요. ");
+				System.out.println("1~50 사이의 정수를 입력하세요. ");
 			}
 		}
 	} // 01 종료
@@ -145,6 +147,12 @@ public class Practice02 {
 			
 			System.out.print("문자 : ");
 			String mon = sc.next();
+			
+			while(1==1) {
+				for(int i=0;i<str.length();i++) {
+					
+				}
+			}
 			
 			// str.charAt(i)==mon.charAt(0)
 		}

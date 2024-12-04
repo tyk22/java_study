@@ -6,7 +6,7 @@ public class Pactice06 {
 //		(0,0)(0,1)(0,2)
 //		(1,0)(1,1)(1,2)
 		String[][]monj= {{"(0,0)","(0,1)","(0,2)"},{"(1,0)","(1,1)","(1,2)"}};
-		
+		String[][]me;
 		for(int i=0;i<monj.length;i++) {
 			
 			for(int j=0;j<monj[i].length;j++) {

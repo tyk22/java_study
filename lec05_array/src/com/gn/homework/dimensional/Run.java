@@ -18,7 +18,7 @@ public class Run {
 		8. 오늘의 메뉴판 만들기
 		선택 : 2*/
 		System.out.println("실행할 기능을 선택하세요. ");
-		System.out.println("1. 키순서대로 앉으세요.");
+		System.out.println("1. 키순서대로 앉으세요."); // O
 		System.out.println("2. 값 입력 받아 배열 만들기");
 		System.out.println("3. 올라갔다 내려갔다");
 		System.out.println("4. 로또 번호 자동 생성기");

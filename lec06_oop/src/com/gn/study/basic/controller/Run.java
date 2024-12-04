@@ -2,7 +2,8 @@ package com.gn.study.basic.controller;
 
 //import java.util.Date;
 //import java.util.Scanner;
-import java.util.*; // 					* < 와일드 카드 util밑에 있는 기능을 다 쓰겠다
+import java.util.*; // 	* < 와일드 카드 util밑에 있는 기능을 다 쓰겠다(패키지)
+
 import com.gn.study.basic.model.vo.Car;
 
 public class Run {
