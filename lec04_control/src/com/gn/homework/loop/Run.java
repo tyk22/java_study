@@ -34,7 +34,7 @@ public class Run {
 		case 4 : practice.practice04();break;
 		case 5 : practice.practice05();break;
 		case 7 : practice.practice07();break;
-		// case 8 : practice.practice08();break;
+		case 8 : practice.practice08();break;
 		}
 
 	}

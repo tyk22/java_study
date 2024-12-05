@@ -13,12 +13,12 @@ public class Book {
 		
 	}
 	
-	public void Book(String title,int price,String author) {
+	public  Book(String title,int price,String author) {
 		this.title=title;
 		this.price=price;
 		this.author=author;
 	}
-	public void Book(String title,String publisher,String author,int price,double discountrRate) {
+	public  Book(String title,String publisher,String author,int price,double discountrRate) {
 		this.title=title;
 		this.publisher=publisher;
 		this.author=author;

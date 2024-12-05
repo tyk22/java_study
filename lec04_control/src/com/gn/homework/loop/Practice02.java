@@ -141,22 +141,36 @@ public class Practice02 {
 //		포함된 개수 : 0
 //		다시 입력하시겠습니까? : N
 		
-		while(true) {
+		while(0==0){
 			System.out.print("문자열 : ");
 			String str = sc.next();
-			
 			System.out.print("문자 : ");
 			String mon = sc.next();
-			
-			while(1==1) {
+			int gaga = 0;
 				for(int i=0;i<str.length();i++) {
-					
+					if(str.charAt(i)==mon.charAt(0)) {
+						gaga++;
+					}
 				}
-			}
-			
-			// str.charAt(i)==mon.charAt(0)
+				System.out.print("포함된 개수 : "+gaga+"\n");
+				System.out.print("다시 입력하시겠습니까? : ");
+				do {
+				mon = sc.next();
+				if(mon.equals("n")) {
+					return;
+				}else if(mon.equals("N")) {
+					return;
+				}else if(mon.equals("y")) {
+					break;
+				}else if(mon.equals("Y")) {
+					break;
+				}else {
+					System.out.println("잘못된 대답입니다. 다시 입력해주세요.");
+					System.out.print("다시 입력하시겠습니까? : ");
+				}
+				}while(0==0);
 		}
-	}
+	} // 8번 완료
 	
 	
 }
