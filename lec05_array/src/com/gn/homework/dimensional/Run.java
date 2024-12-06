@@ -31,6 +31,8 @@ public class Run {
 		
 		switch (num) {
 		case 1: p.practice01();break;
+		case 2: p.practice02();break;
+		case 3: p.practice03();break;
 			
 		default:
 		}
