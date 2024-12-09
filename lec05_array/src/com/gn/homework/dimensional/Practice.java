@@ -69,8 +69,7 @@ public class Practice {
 		while(1==1) {
 			
 		}
-		int[] bolong = new int[jong];
-		
+	
 		
 		
 		
