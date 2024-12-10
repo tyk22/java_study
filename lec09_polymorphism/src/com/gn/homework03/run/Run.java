@@ -8,21 +8,16 @@ import com.gn.homework03.model.vo.GasolineEngine;
 public class Run {
 
 	public static void main(String[] args) {
-		Car c = new Car(ElectricEngine());
-		Car e = new Car(GasolineEngine());
 		
-		c.startEngine();
+		ElectricEngine el = new ElectricEngine();
+		GasolineEngine gas = new GasolineEngine();
+		Car c = new Car(el);
+		Car e = new Car(gas);
+		
 		e.startEngine();
+		c.startEngine();
 	}
 
-	private static Engine GasolineEngine() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	private static Engine ElectricEngine() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	
 }

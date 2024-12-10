@@ -17,12 +17,11 @@ public class Dish extends Menu{
 	}
 	@Override
 	public String toString() {
-		super.toString();
 		return "재료는"+ingredients+"입니다. ";
 	}
 	@Override
 	public void cook() {
-		toString();
+		System.out.println(super.toString()+toString());
 		}
 	
 }

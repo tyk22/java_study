@@ -1,8 +1,6 @@
 package com.gn.homework03.model.vo;
 
 public abstract class Engine{
-	public void start() {
-		
-	}
+	public abstract void start();
 	
 }

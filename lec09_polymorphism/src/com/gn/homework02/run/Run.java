@@ -14,14 +14,14 @@ public class Run {
 			int rnd = (int)(Math.random()*(2-1+1))+1;
 			
 			if(rnd==1) {
-				me[i] = new Dish("탕수육", 3, "짜장면");
+				me[i] = new Dish("빵", 3000, "밀가루");
 			}else {
-				me[i]= new Drink("콜라",1,"사이다");
+				me[i]= new Drink("콜라",1000,"로지텍");
 			}
 			
 		}
 		for(Menu co:me) {
-			System.out.println(co);
+			co.cook();
 		}
 
 	}
