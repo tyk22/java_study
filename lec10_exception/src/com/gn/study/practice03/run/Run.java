@@ -21,6 +21,8 @@ public class Run {
 			
 		}catch(InvalidCredentialsException e) {
 			
+		}finally{
+			sc.close(); //꺼주기ㅣ
 		}
 	}
 
