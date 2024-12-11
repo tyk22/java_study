@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 import com.gn.study.model.vo.Container;
+import com.gn.study.model.vo.Student;
 
 public class Run {
 
@@ -112,13 +113,29 @@ public class Run {
 		
 		System.out.println("내림차순 : "+nume);
 		
+		// ArrayList<객체>
+		List<Student> stud = new ArrayList<Student>();
 		
+		stud.add(new Student("김철수",50));
+		System.out.println(stud);
+			//   equals비교함
+		if(stud.contains(new Student("김철수", 50))) {
+			System.out.println("O");
+		}else {
+			System.out.println("X");
+		}
+			//   equals비교함
+		if(stud.indexOf(new Student("김철수", 50))!=-1) {
+			System.out.println("O");
+		}else {
+			System.out.println("X");
+		}
+		stud.add(new Student("영희", 40));
+		stud.add(new Student("길동", 30));
 		
-		
-		
-		
-		
-	
+		System.out.println("정렬 전 : "+stud);
+		Collections.sort(stud);
+		System.out.println("정렬 후 : "+stud);
 	}
 
 }
