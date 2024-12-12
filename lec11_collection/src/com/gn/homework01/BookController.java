@@ -20,7 +20,7 @@ public class BookController {
 		return bookList;
 	}
 	
-	public List<Book> searchBook(String keyword){
+	/*public List<Book> searchBook(String keyword){
 		
 	}
 	
@@ -30,6 +30,6 @@ public class BookController {
 	
 	public int ascBook() {
 		
-	}
+	}*/
 	
 }

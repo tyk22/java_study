@@ -1,5 +1,7 @@
 package com.gn.study.model.vo;
 
+import java.util.Objects;
+
 // 1. Comparable 인터페이스를 구현한다.
 public class Student implements Comparable<Student>{
 	public String name;
@@ -17,6 +19,11 @@ public class Student implements Comparable<Student>{
 	@Override
 	public String toString() {
 		return "["+"이름 :"+name+", 나이:"+age+"]";
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(name,age);
 	}
 	
 	@Override
@@ -49,6 +56,14 @@ public class Student implements Comparable<Student>{
 		// return이 양수면 앞뒤 바뀐다.
 		// return이 음수면 앞뒤 바꾸지 않는다.
 		// return이 0이면 두 값이 같다.
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 	
