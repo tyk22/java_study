@@ -13,7 +13,8 @@ public class BookController {
 		bookList.add(new Book("혼자 공부하는 자바","신용권","기타",25240));
 	}
 	public void insertBook(Book bk) {
-		this.bookList=(List<Book>) bk;
+
+		bookList.add(bk);
 	}
 	
 	public List<Book> selectList(){

@@ -41,10 +41,7 @@ public class Book {
 	}
 	
 	public String toString() {
-		return "도서명 :"+title+"\n"+
-				"저자명 :"+author+"\n"+
-				"장르 : "+category+"\n"+
-				"가격 : "+proce;
+		return title+"("+author+"), "+category+", "+proce;
 	}
 	
 }

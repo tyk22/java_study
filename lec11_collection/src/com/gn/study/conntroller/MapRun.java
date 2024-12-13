@@ -1,10 +1,15 @@
 package com.gn.study.conntroller;
 
+import java.awt.geom.FlatteningPathIterator;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class MapRun {
 
@@ -115,6 +120,44 @@ public class MapRun {
 			System.out.println(key+value);
 		}
 		
+		// 8. HashMap 요소 삭제
+		System.out.println(flower.size()+" : "+flower);
+	//	flower.remove("price");
+		//System.out.println(flower.size()+" : "+flower);
+//		flower.clear();
+		//System.out.println(flower.size()+" : "+flower);
+		
+		// 9. HashMap 요소 검색
+		if(flower.containsKey("price")) {
+			System.out.println("O");
+			
+		}else {
+			System.out.println("X");
+		}
+		if(flower.containsValue(20000)) {
+			System.out.println("싸다");
+		}else {
+			System.out.println("비싸다");
+		}
+		
+		// 10. HashMap<객체> 요소 검색
+		if(su.containsValue(new Snack("매운맛",900))) {
+			System.out.println("내꺼");
+		}
+			
+		// 11. LinkdHashMap
+		Map<String, Object> flower2 = 
+				//new HashMap<String, Object>();
+				//new LinkedHashMap<String, Object>();
+				new TreeMap<String, Object>(Collections.reverseOrder());// Collections.reverseOrder()반대기억
+				
+		flower2.put("price", 20000);
+		flower2.put("lang", "고백");
+		flower2.put("name", "튤립");
+		
+		System.out.println(flower2);
+		
 	}
+	
 
 }
