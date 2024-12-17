@@ -98,6 +98,34 @@ public class StringRun {
 		String filename = file.substring(0,file.lastIndexOf("."));
 		System.out.println(ex+" : "+filename);
 		
+		// valueOf() 문자열로 변환
+		double pi = 3.14;
+		String piStr = String.valueOf(pi);
+		System.out.println(piStr); 
+		
+		// StringBuilder
+		StringBuilder sb= new StringBuilder("Hello");
+		sb.append("Werld!!");
+		System.out.println(sb);
+		
+		sb.insert(5, " java ");
+		
+		// delete
+		System.out.println(sb);
+		sb.delete(11, 16+1);
+		System.out.println(sb);
+		
+		// deleteCharAt()
+		int idx = sb.indexOf("!");
+		sb.deleteCharAt(idx);
+		System.out.println(sb);
+	
+		//reverse()
+		sb.reverse();
+		System.out.println(sb);
+		
+		
+		
 		
 		
 		
