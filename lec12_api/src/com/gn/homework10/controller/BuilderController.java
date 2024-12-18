@@ -7,6 +7,11 @@ public class BuilderController {
 	}
 	
 	public String afterReplace(String str) {
+		/*StringBuilder str2 = new StringBuilder();
+		String ddigi;
+		while(str.indexOf(" ")==0) {
+			ddigi= str.deleteCharAt(0);
+		}*/
 		String ddigi = str.replace(" ", "");
 		return ddigi;
 		
