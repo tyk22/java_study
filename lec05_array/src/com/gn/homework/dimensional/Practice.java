@@ -1,5 +1,7 @@
 package com.gn.homework.dimensional;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Practice {
@@ -63,71 +65,76 @@ public class Practice {
 //		1, 2, 3, 2, 1
 //		3 > 이상 정수
 		// 3 < 다시입력
-		System.out.print("3 이상의 홀수 정수 : ");
-		int jong = sc.nextInt();
-		
 		while(1==1) {
-			
+			System.out.print("3 이상의 홀수 정수 : ");
+			int jong = sc.nextInt();
+			if(jong%2==0 || jong<0) {
+				System.out.println("다시 입력하세요.");
+			}
+			int[] number = new int[jong]; 
+			for(int i = 0; i<jong; i++) {
+				number[i]=i+1;
+				if(i>jong/2) {
+					//3 > 1
+					for(int j =jong/2;j>0;j--) {
+					number[i]=j;
+					i++;
+					}
+				}
+			}
+			for(int i =0; i< number.length;i++) {
+				if(i==number.length-1) {
+					System.out.print(number[i]);
+				}else {
+					System.out.print(number[i]+", ");
+				}
+			}
+			System.out.println();
+			break;
 		}
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		/*while(1==1) {
-		System.out.print("3 이상의 홀수 : ");
-		int jung = sc.nextInt();
-		if(jung%2==0) {
-			System.out.println("다시 입력하세요.");
-			
-		}else if(jung<0) {
-			System.out.println("다시 입력하세요.");
-			
-		}else {
-		int[] bolong = new int[jung];
-		for(int i=0; i<bolong.length;i++) {
-			bolong[i]=i;
-			System.out.print(bolong[i]+", ");
-		
-		}
-		for(int j=bolong.length-1;j>0;j--) {
-			System.out.print(bolong[j]-1+", ");
-		}
-	}
-}*/
+	//==============03 종료
 }
+		public void practice04() {
+			int[] arr = new int[6];
+			for(int i=0;i<arr.length;i++) {
+				for(int j=i+1;j<arr.length;j++) {
+				arr[i]=(int)(Math.random()*(45-1+1))+1;	
+				
+				if(arr[i]==arr[j]) {
+					arr[i]=(int)(Math.random()*(45-1+1))+1;						
+				}
+					
+				}
+			}
+			
+			for(int i=0; i<arr.length;i++) {
+				for(int j=i+1;j<arr.length;j++) {
+					if(arr[i]>arr[j]) {
+						int b = arr[i];
+						arr[i] = arr[j];
+						arr[j]=b;
+					}
+				}
+			}
+			for(int ara : arr) {
+				System.out.print(ara+" ");
+			}
+			
+//		}
+//		
+//		
+//		
+//		
+//		for(int i =0; i<arr.le)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
 }
+

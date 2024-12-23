@@ -33,6 +33,7 @@ public class Run {
 		case 1: p.practice01();break;
 		case 2: p.practice02();break;
 		case 3: p.practice03();break;
+		case 4: p.practice04();break;
 			
 		default:
 		}
